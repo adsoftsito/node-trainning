@@ -12,7 +12,7 @@ RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 RUN apt-get install -y nodejs
 
 # install dependencies
-ADD package.json /package.json
+ADD . /
 RUN npm install
 
 # set /src as the working directory for this container
